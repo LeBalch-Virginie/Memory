@@ -1,0 +1,55 @@
+
+#progress {
+  background: red;
+  height: 5px;
+}
+
+#title {
+  background: lightgrey;
+  text-align: center;
+}
+
+#score {
+  th, td {
+    padding: 5px;
+  }
+
+  th {
+    border-bottom: 1px solid black;
+  }
+
+}
+
+#table_game {
+  td, th {
+    border: 4px solid green;
+  }
+
+  border-collapse: collapse;
+}
+
+.hidden {
+  display: none;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+//Create all class necessary with sprite
+@for $i from 1 through 18 {
+  .image-#{$i} {
+    height: 100px;
+    width: 100px;
+    background: url('https://static.oclock.io/challenges/tests-techniques/cards.png') 0px 100px*$i;
+  }
+}
+
+.image-none {
+  height: 100px;
+  width: 100px;
+  background: darkgray ;
+}
+
